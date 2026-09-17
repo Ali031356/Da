@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ahmed Ali Khan | Student Portfolio</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.6;
+      color: #243047;
+      background: #f5f7fb;
+    }
+    nav {
+      position: sticky; top: 0; z-index: 10;
+      background: #ffffff;
+      border-bottom: 1px solid #e5e7eb;
+      padding: 14px 8%;
+      display: flex; justify-content: space-between; align-items: center;
+    }
+    nav .logo { font-weight: 700; font-size: 20px; }
+    nav a { color: #243047; text-decoration: none; margin-left: 18px; font-size: 14px; }
+    nav a:hover { text-decoration: underline; }
+    .hero {
+      padding: 85px 8%;
+      background: linear-gradient(135deg, #eef3ff, #ffffff);
+      text-align: center;
+    }
+    .hero h1 { font-size: clamp(38px, 6vw, 64px); margin-bottom: 10px; }
+    .hero h2 { font-size: 22px; font-weight: 500; margin-bottom: 18px; }
+    .hero p { max-width: 700px; margin: auto; color: #5d687d; }
+    .btn {
+      display: inline-block; margin-top: 25px; padding: 12px 22px;
+      background: #243047; color: white; border-radius: 8px;
+      text-decoration: none;
+    }
+    main { max-width: 1000px; margin: auto; padding: 25px 20px 60px; }
+    section {
+      background: white; margin: 22px 0; padding: 32px;
+      border-radius: 14px; border: 1px solid #e8ebf0;
+      box-shadow: 0 6px 20px rgba(0,0,0,.04);
+    }
+    section h2 { margin-bottom: 15px; font-size: 28px; }
+    .info-grid {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 15px; margin-top: 18px;
+    }
+    .card {
+      padding: 18px; background: #f7f8fb; border-radius: 10px;
+    }
+    .card strong { display: block; margin-bottom: 5px; }
+    .skills { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 15px; }
+    .skill {
+      background: #eef3ff; padding: 8px 14px; border-radius: 20px; font-size: 14px;
+    }
+    ul { padding-left: 22px; }
+    footer { text-align: center; padding: 25px; color: #697386; }
+    @media (max-width: 650px) {
+      nav { padding: 12px 5%; }
+      nav .links { display: none; }
+      section { padding: 24px; }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <div class="logo">Ahmed Ali Khan</div>
+  <div class="links">
+    <a href="#about">About</a>
+    <a href="#education">Education</a>
+    <a href="#skills">Skills</a>
+    <a href="#interests">Interests</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <h1>Ahmed Ali Khan</h1>
+  <h2>Integrated Business Management Student</h2>
+  <p>
+    Welcome to my student portfolio. This website presents my academic
+    background, skills, interests, and learning journey.
+  </p>
+  <a class="btn" href="#about">Explore My Portfolio</a>
+</header>
+
+<main>
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      Hello! I am Ahmed Ali Khan, a student at Donga University studying
+      Integrated Business Management. I am interested in learning,
+      exploring new ideas, thinking creatively, and developing skills
+      that can help me in my academic and professional journey.
+    </p>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <div class="info-grid">
+      <div class="card">
+        <strong>University</strong>
+        Donga University
+      </div>
+      <div class="card">
+        <strong>Major</strong>
+        Integrated Business Management
+      </div>
+      <div class="card">
+        <strong>Student ID</strong>
+        2622219
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Skills & Learning</h2>
+    <p>
+      I am continuously developing my academic, communication, teamwork,
+      problem-solving, and digital skills.
+    </p>
+    <div class="skills">
+      <span class="skill">Problem Solving</span>
+      <span class="skill">Teamwork</span>
+      <span class="skill">Communication</span>
+      <span class="skill">Critical Thinking</span>
+      <span class="skill">AI Tools</span>
+      <span class="skill">Business Learning</span>
+    </div>
+  </section>
+
+  <section id="interests">
+    <h2>My Interests</h2>
+    <ul>
+      <li>Playing</li>
+      <li>Exploring</li>
+      <li>Reading</li>
+      <li>Thinking and developing new ideas</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Projects & Academic Activities</h2>
+    <p>
+      <strong>Student Portfolio Project:</strong>
+      Created a personal portfolio using HTML, GitHub, and AI assistance
+      as part of my university learning.
+    </p>
+    <br>
+    <p>
+      <strong>Algorithm Learning:</strong>
+      Practicing step-by-step problem solving and algorithms through
+      classroom activities and assignments.
+    </p>
+  </section>
+
+  <section>
+    <h2>AI Learning</h2>
+    <p>
+      I am learning how AI tools can support programming, problem solving,
+      research, creativity, and academic projects while improving my own
+      understanding and skills.
+    </p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p><strong>Email:</strong> ahmadjadoon751@gmail.com</p>
+    <p><strong>GitHub:</strong> Ali031356</p>
+  </section>
+</main>
+
+<footer>
+  <p>© 2026 Ahmed Ali Khan · Student Portfolio</p>
+</footer>
+
+</body>
+</html>
